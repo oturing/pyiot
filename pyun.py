@@ -1,9 +1,14 @@
 # coding: utf-8
 
 """
-Pyun: Python interface to Arduino Yún
+Pyun: Python interface to Arduino Yún via HTTP to Bridge sketch
 
+WARNING: this requires the Bridge sketch running on the Arduino.
+
+About Bridge:
 http://arduino.cc/en/Tutorial/Bridge
+
+Bridge REST cheat-sheet:
 
  * "/arduino/digital/13"     -> digitalRead(13)
  * "/arduino/digital/13/1"   -> digitalWrite(13, HIGH)
