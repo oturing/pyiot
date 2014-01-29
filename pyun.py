@@ -26,6 +26,7 @@ INPUT = 'input'
 OUTPUT = 'output'
 HIGH = 1
 LOW = 0
+PINS = range(0, 14)
 
 class YunBridge(object):
 
@@ -33,6 +34,9 @@ class YunBridge(object):
         self.host = host
         self.base_url = 'http://%s/arduino/' % host
         self.verbose = verbose
+        for pin in PINS:
+            self.digitalWrite(pin, 0)
+            self.pinMode(pin, INPUT)
 
     def makeURL(self, command, pin, *args):
         rest_args = '/'.join(str(x) for x in args)
