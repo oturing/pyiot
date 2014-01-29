@@ -1,4 +1,8 @@
+# coding: utf-8
+
 """
+Pyun: Python interface to Arduino Yún
+
 http://arduino.cc/en/Tutorial/Bridge
 
  * "/arduino/digital/13"     -> digitalRead(13)
@@ -7,9 +11,6 @@ http://arduino.cc/en/Tutorial/Bridge
  * "/arduino/analog/2"       -> analogRead(2)
  * "/arduino/mode/13/input"  -> pinMode(13, INPUT)
  * "/arduino/mode/13/output" -> pinMode(13, OUTPUT)
-
- Pin D13 set to 1
-
 
 """
 

@@ -1,4 +1,5 @@
-from time import sleep
+#!/usr/bin/env python
+# coding: utf-8
 
 from pyun import *
 
